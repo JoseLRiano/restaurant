@@ -1,0 +1,370 @@
+
+/* Variables */
+
+:root {
+	--primary: #EDD854;
+	--font: 'Rochester', cursive;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body.body-background {
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/spons.jpeg");
+	position: relative;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	margin: 0 auto;
+	background-color: #ddd;
+
+}
+
+ul{
+	padding-right: 3rem;
+	margin-top: -2.5rem;
+}
+
+li {
+	padding-right: 8px;
+	display: block;
+	float: right;
+}
+
+a {
+	text-align: center;
+	display: block;
+	padding-left: 1rem;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1.4em;
+}
+
+a:hover {
+	color: var(--primary);
+}
+
+h1#joseph{
+	font-family: 'Cookie', cursive;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 2rem;
+}
+
+h1#title-joseph {
+	font-family: 'Cookie', cursive;
+	color: #fff;
+	padding-top: 10rem;
+	text-align: center;
+	font-size: 9rem;
+
+}
+
+#title {
+	font-family: 'News Cycle', sans-serif;
+	color: #fff;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 2.5rem;
+	letter-spacing: 8px;
+}
+
+.container{
+	
+	margin: 4rem 9rem;
+	box-shadow: var(--shadow);
+
+}
+
+.header {
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("img/spons.jpeg");	
+	min-height: 100vh;
+	width: 100%;
+	position: center;
+	background-size: cover;
+}
+
+@media(max-width: 850px){
+	.container {
+		margin: 2rem;
+	}
+}
+
+@media(max-width: 700px){
+	
+
+	ul li{
+		padding: 2rem;
+		font-size: 0.8rem;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+	}
+	#title {
+		font-size: 1.5rem;
+	}
+	h1#title-joseph {
+		font-size: 4rem;
+	}
+
+}
+
+/*			Break Section       */
+
+.break {
+	background: #D9D4CC;
+	min-height: 60vh;
+	width: 100%;
+	z-index: -1;
+}
+
+/*		OverLap Section      */
+
+.info{
+	background: #EFEFEF;
+	min-height: 70vh;
+	width: 65%;
+	margin: -2rem 5rem 2rem 5rem;
+	box-shadow: var(--shadow);
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+	
+.btn {
+	margin-top: 1rem;
+	background: #D7AD83;
+	color: #ddd;
+	padding: 0.6rem 1.7rem;
+	text-decoration: none;
+	border: 0;
+}
+
+@media(max-width: 1000px){
+	.info {
+		width: 50%;
+	}
+}
+
+@media(max-width: 850px) {
+	.info {
+		width: 70%;
+	}	
+}
+@media(max-width: 800px) {
+	.info {
+		width: 65%;
+	}	
+}
+
+@media(max-width: 700px) {
+	.info {
+		width: 55%;
+	}	
+}
+
+
+/*		Reservation & About Section     */
+
+
+.reservation-info{
+	flex-basis: 40%;
+	align-items: center;
+	
+}
+
+.reservation-img{
+	background-image: url("img/outside.jpeg");
+	background-size: cover;
+	flex-basis: 60%;
+}
+
+.about-img {
+	background-image: url("img/table.jpg");
+	background-size: cover;
+	flex-basis: 40%;
+}
+
+.about-info {	
+	flex-basis: 60%;
+}
+.about-info p, .reservation-info p {
+	padding: 1rem;
+}
+
+@media(max-width: 800px) {
+	.reservation-info, .reservation-img, 
+	.about-img, .about-info {
+		flex-basis: 50%;
+	} 
+	.food-description, .food-img {
+		flex-basis: 50%;
+	} 
+
+}
+
+@media(max-width: 700px) {
+	.reservation-info, .reservation-img, 
+	.about-img, .about-info,
+	.food-description, .food-img {
+		flex-basis: 100%;
+		display: block;
+	} 
+
+	.reservation-img, .about-img,
+	.food-img {
+		min-height: 15rem;
+	}
+	.break {
+		min-height: 120vh;
+	}
+}
+
+/*			Specialities Section        	*/
+
+.specialities {
+	background-image: url("img/burgerguy.jpeg");
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	z-index: -1;
+}
+
+.specialities h1{
+	text-align: center;
+	padding-top: 20rem;
+	color: #fff;
+	font-size: 5rem;
+	font-family: 'News Cycle', sans-serif;
+}
+
+.food-description {
+	flex-basis: 25%;
+	text-align: center;
+}
+
+.food-img {
+	background-image: url("img/food1.jpeg");
+	background-size: cover;
+	background-position: center;
+	flex-basis: 25%;
+	
+}
+
+
+
+.pre-menu-img {
+	background-image: url("img/cappuccino.jpeg");
+	background-size: cover;
+	position: relative;
+	min-height: 70vh;
+	z-index: -1;
+}
+
+
+/*				Menu     		*/
+
+
+.menu{
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/menuimg.jpeg");
+	background-size: cover;
+	position: relative;
+	min-height:100vh;
+	width: 100%;
+	
+}
+
+
+.menu-content {
+	padding-top: 6rem;
+	text-align: center;
+}
+
+.menu-content h1{
+	font-family: 'Cookie', cursive;
+	font-size: 4rem; 
+
+}
+.menu-content hr {
+	   display: block;
+       position: relative;
+       padding: 0;
+       margin: auto;
+       height: 0;
+       width: 10%;
+       max-height: 0;
+       line-height: 0;
+       clear: both;
+       border: none;   
+       border-top: 1px solid var(--primary);
+}
+
+.menu-content h2 {
+	padding: 3rem;
+	font-size: 2.5rem;
+	font-family: var(--font);
+
+}
+
+.menu-content table {
+	width: 100%;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 1.5rem;
+	padding-bottom: 6rem;
+}
+
+.menu-content hr {
+	padding: 15px;
+
+}
+
+.price {
+	color: var(--primary); 
+	float: right;
+	padding-right: 3rem;
+	font-family: var(--font);
+}
+
+/*				Text and Title Fonts        */
+
+#info-title {
+	color: #000;
+	padding-top: 1rem;
+	font-family: var(--font);
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+#info-text {	
+	font-family: 'News Cycle', sans-serif;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+#info-text h2{
+	font-family: var(--font);
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+ 
+#info-text p{
+	padding: 1rem;
+}
+
+
+
