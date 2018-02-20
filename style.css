@@ -99,9 +99,12 @@ h1#title-joseph {
 	.container {
 		margin: 2rem;
 	}
+	h1#title-joseph {
+		text-align: center;
+	}
 }
 
-@media(max-width: 700px){
+@media(max-width: 736px){
 	
 
 	ul li{
@@ -117,6 +120,7 @@ h1#title-joseph {
 	}
 	h1#title-joseph {
 		font-size: 4rem;
+		text-align: center;
 	}
 
 }
@@ -216,6 +220,7 @@ h1#title-joseph {
 		flex-basis: 50%;
 	} 
 
+
 }
 
 @media(max-width: 700px) {
@@ -303,7 +308,7 @@ h1#title-joseph {
 .menu-content hr {
 	   display: block;
        position: relative;
-       padding: 0;
+       padding: 15px;
        margin: auto;
        height: 0;
        width: 10%;
@@ -318,6 +323,7 @@ h1#title-joseph {
 	padding: 3rem;
 	font-size: 2.5rem;
 	font-family: var(--font);
+	color: var(--primary);
 
 }
 
@@ -326,12 +332,10 @@ h1#title-joseph {
 	font-family: 'News Cycle', sans-serif;
 	font-size: 1.5rem;
 	padding-bottom: 6rem;
+	color: var(--primary);
 }
 
-.menu-content hr {
-	padding: 15px;
 
-}
 
 .price {
 	color: var(--primary); 
